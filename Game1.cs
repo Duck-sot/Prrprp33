@@ -8,6 +8,7 @@ public class Game1 : Game
 {
     private GraphicsDeviceManager _graphics;
     private SpriteBatch _spriteBatch;
+    public static SpriteBatch SpriteBatch{ get; set; }
 
     public Game1()
     {
@@ -26,6 +27,7 @@ public class Game1 : Game
     protected override void LoadContent()
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
+        SpriteBatch = _spriteBatch;
 
         // TODO: use this.Content to load your game content here
     }
